@@ -1,0 +1,813 @@
+html{
+  font-family: Helvetica;
+}
+
+body{
+
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
+  grid-template-rows: 25px 50px repeat(4,100px) repeat(4, minmax(5em, 160px)) auto 35px;
+  grid-template-areas:
+    "x x x x x x x x"
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". a b c d e f ."
+    ". g h i j k l ."
+    ". m n o p q r ."
+    ". s aa ab ac ad ae ."
+    ". . . fot fot fot . ." ;
+  grid-gap: 15px;
+}
+footer{
+
+  grid-area: fot;
+  color:white;
+}
+h1{
+  font-family: Garamond;
+  font-size: 100px;
+}
+.cover2 h1{
+  font-size: 100px;;
+}
+h2{
+  text-transform: uppercase;
+  /*font-family: Georgia;*/
+  font-size: 1em;
+  font-family: Helvetica;
+
+}
+
+
+h5{
+  font-weight: lighter;
+  display: flex;
+  align-items:flex-end;
+  justify-content: end;
+}
+#credits{
+  display: grid;
+  display: flex;
+  align-items:flex-end;
+  justify-content: end;
+  align-self: flex-end;
+
+}
+.dot{
+  background-image:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
+  grid-area: 2 / 1 /-1 / -1;
+  background-size: cover;
+  /*.bg {
+    /* The image used
+
+     Half height
+    height: 50%;
+
+     Center and scale the image nicely
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }*/
+}
+#logo{
+  height: 100px;
+
+}
+#logo:hover{
+  border-style: hidden;
+
+}
+ a:hover{
+  border-style: solid;
+  border-color: white;
+  /*pointer-events:none;*/
+}
+/*
+ .textcover {
+  grid-area: z;
+  opacity: 0.9;
+  color:black;
+  text-align: center;
+}
+*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.head{
+  grid-area: x;
+  display: flex;
+  grid-gap: 0px;
+}
+.head li{
+  display: inline;
+}
+.cover{
+  grid-area: z;
+  background-image: url(cover1.jpg);
+  box-shadow: 0px 10px 10px black;
+  background-size: cover;
+  border-radius: 60px;
+  background-position: center;
+
+}
+.contatotext{
+  grid-area: 6/2/span 1 / 8;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.categoria{
+
+}
+tbody{
+  grid-area: 3 / 2 /7 /8 ;
+
+}
+#contato{
+  text-align:right;
+}
+#sobre{
+
+  text-align: right;
+}
+.head li{
+  margin: 0px 10px;
+
+
+}
+
+#academia{
+grid-area: a;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(academia.jpg);
+}
+#advocacia{
+  grid-area: b;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(advocacia.jpg);
+}
+#açougue{
+  grid-area: c;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(açougue.jpg);
+}
+#alfaiate{
+
+  grid-area: d;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(alfaiate.jpg);
+
+
+}
+#aluguel{
+grid-area: e;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(aluguel.jpg);
+}
+/*#aluguel h4{
+  opacity: 0;
+}*/
+#aluguel:hover{
+  color: black;
+  display:block;
+}
+#aluguel:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+
+#bar{
+  grid-area: f;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(bar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#beleza{
+  grid-area: g;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(beleza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cerimonial{
+  grid-area: h;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(cerimonial.jpg);
+}
+#cerimonial:hover{
+  color: black;
+  display:block;
+}
+#cerimonial:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+
+
+}
+#civil{
+  grid-area: i;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(civil.jpg);
+}
+#civil:hover{
+  color: black;
+  display:block;
+}
+#civil:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+#contabilidade{
+  grid-area: j;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(contabilidade.jpg);
+}
+#doces{
+  grid-area: k;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(doces.jpg);
+}
+#educação {
+  grid-area: l;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(educacao.jpg);
+}
+#educação:hover{
+  color: black;
+  display:block;
+}
+#educação:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+#farmácia{
+  grid-area: m;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(farmacia.jpg);
+}
+#fotografia{
+  grid-area: n;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(fotografia.jpeg);
+}
+#hotel{
+  grid-area: o ;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(hotel.png);
+  background-size: cover;
+}
+#lanchonete{
+grid-area: p;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(lanchonete.jpg);
+}
+#lavajato{
+grid-area: q;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(lavajato.jpg);
+}
+
+#lojas{
+  grid-area: r;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(lojas.jpg);
+}
+#musica{
+  grid-area: s;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(musica.jpg);
+  background-size: cover;
+}
+#oficina{
+grid-area: aa;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(oficina.jpg);
+}
+#saude{
+  grid-area: ab;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(saude.jpg);
+  background-position: center;
+}
+#saude:hover{
+  color: black;
+  display:block;
+}
+#saude:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+#supermacado{
+  grid-area: ac;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(supermercado.jpg);
+}
+#transporte{
+grid-area: ad;
+background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(transporte.jpg);
+}
+#transporte:hover{
+  color: black;
+  display:block;
+}
+#transporte:hover:after{
+  content: attr(data-hover);
+  display: block;
+  grid-area:e;
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+
+
+#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
+  display: flex;
+  align-items:flex-end;
+  color: white;
+  justify-content: end;
+
+  box-shadow: 5px 5px 5px black;
+  border-radius: 7px;
+  padding: 0.5em;
+  background-size: cover;
+  /*
+  border-style: solid;
+  border-color: black;*/
+}
+
+
+
+
+
+
+
+
+
+                                                    /*PÁGINA ANUNCIOS*/
+
+body.anunciosadvocacia{
+
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
+  grid-template-rows: 25px 50px repeat(4,100px) repeat(4, minmax(5em, 180px)) auto 35px;
+  grid-template-areas:
+    "x x x x x x x x"
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". a b c d e f ."
+    ". g h i j k l ."
+    ". m n o p q r ."
+    ". s aa ab ac ad ae ."
+    ". . . fot fot fot . ." ;
+  grid-gap: 15px;
+}
+
+
+.cover2{
+  background-color: hsla(120, 100%, 5%, 0.6);
+  grid-area: 3 /1/span 3/9;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 400px;
+  background-size: cover;
+  color: white;
+  margin-bottom: 50px;
+  }
+.contatotext{
+  text-align: center;
+  line-height: 2;
+}
+.contatotext a:hover{
+  background: hsla(120, 100%, 5%, 0.4);
+  border-radius: 10px;
+  font-weight: bold;
+}
+.coveranuncio{
+  grid-area: 6 /2/ 11 / 8;
+  background: white;
+  /*background: linear-gradient(hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 0.6));*/
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 10px 10px 10px hsla(0, 0%, 10%, 0.8);
+
+}
+#mapaanuncio {
+
+
+content: url(mapa.jpg);
+width: 35px;
+height: 20px;
+
+}
+#mapaanuncio:hover{
+  border-style: hidden;
+}
+
+
+
+
+                                /*ADVOCACIA*/
+
+
+
+
+.anuncio1{
+  grid-area: 7/2/span 1 /span 3;
+  padding-left: 10px;
+  border-top: 5px ridge white;
+  border-bottom: none;
+  margin-left: 10px;
+  }
+  .foto1{
+    grid-area:7/5/span 1/span 1;
+    border-radius: 0px 0px 0px 40px;
+    }
+  .foto2{
+    grid-area: 7/6/span 1/ span 1;
+  }
+  .foto3{
+    grid-area: 7/7/span 1/ span 1;
+    margin-right: 1em;
+    border-radius: 0px 40px 0px 0px;
+
+  }
+
+
+  .anuncio2{
+    grid-area: 8/2/span 1 /span 3;
+    padding-left: 10px;
+    border-top: 5px ridge white;
+    border-bottom: none;
+    margin-left: 10px;
+    }
+  .foto12{
+    grid-area:8/5/span 1/span 1;
+    border-radius: 0px 0px 0px 40px;
+
+  }
+  .foto22{
+    grid-area: 8/6/span 1/ span 1;
+
+  }
+  .foto32{
+    grid-area: 8/7/span 1/ span 1;
+    margin-right: 10px;
+    border-radius: 0px 40px 0px 0px;
+
+  }
+  .anuncio3{
+    grid-area: 9/2/span 1 /span 3;
+    padding-left: 10px;
+    border-top: 5px ridge white;
+    border-bottom: none;
+    margin-left: 10px;
+
+
+    }
+  .foto13{
+    grid-area:9/5/span 1/span 1;
+    border-radius: 0px 0px 0px 40px;
+
+  }
+  .foto23{
+    grid-area: 9/6/span 1/ span 1;
+
+  }
+  .foto33{
+    grid-area: 9/7/span 1/ span 1;
+    margin-right: 10px;
+    border-radius: 0px 40px 0px 0px;
+
+  }
+
+  .foto1, .foto2, .foto3, .foto12,.foto22, .foto32, .foto13, .foto23, .foto33{
+
+
+    height: 160px;
+    box-shadow: 10px 10px 50px gray;
+    width:100%;
+    background-size: cover;
+  }
+
+
+
+
+
+
+
+
+
+                    /*PÁGINA SOBRE*/
+body.sobre{
+  display: grid;
+  grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
+  grid-template-rows: 25px 50px repeat(4,100px) repeat(1, minmax(5px, 20px)) auto 35px;
+  grid-template-areas:
+    "x x x x x x x x"
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". z z z z z z ."
+    ". a b c d e f ."
+    ". g h i j k l ."
+    ". m n o p q r ."
+    ". s aa ab ac ad ae ."
+    ". . . fot fot fot . ." ;
+  grid-gap: 15px;
+}
+
+.sobre .coveranuncio{
+  box-shadow: 10px 10px 10px;
+  grid-area: 6 /2/ 8 / 8;
+
+}
+.paragrafo{
+  grid-area: 6 /2 /span 3 / 8;
+  margin: 20px;
+}
+.sobre h5{
+  color: black;
+}
+
+
+
+                /*PÁGINA CONTATO*/
+            /*  section  {
+                  display: grid;
+                  grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
+                  grid-template-rows: 25px 50px repeat(4,100px) repeat(1, minmax(5px, 20px)) auto 35px;
+                  grid-template-areas:
+                    "x x x x x x x x"
+                    ". z z z z z z ."
+                    ". z z z z z z ."
+                    ". z z z z z z ."
+                    ". z z z z z z ."
+                    ". z z z z z z ."
+                    ". a b c d e f ."
+                    ". g h i j k l ."
+                    ". m n o p q r ."
+                    ". s aa ab ac ad ae ."
+                    ". . . fot fot fot . ." ;
+                  grid-gap: 15px;
+                }*/
+
+.email{
+  grid-area: b;
+  width: 100%;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+
+}
+.facebook{
+  grid-area: e;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.whatsapp{
+  grid-area: q;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.instagram{
+  grid-area: n;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:750px) {
+                  /*INDEX*/
+#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
+width: 42%;
+margin: 0.2em;
+
+height: 100px;
+border: none;
+
+}
+   .index{
+
+    background:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
+
+  }
+.index .head{
+  width: 99%;
+  background-color: white;
+}
+.cover{
+  margin: 0.2em;
+border-radius: 25px;
+}
+
+
+      /*SOBRE*/
+    body.sobre  {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+
+      }
+.sobre h5{
+  font-size: 8px;
+
+}
+
+        /*CONTATO*/
+        .email{
+          width: 50%;
+          background-image: url(emal.png);
+          background-size:contain;
+          background-repeat: no-repeat;
+
+
+        }
+        .facebook{
+          width: 50%;
+          background-image: url(facebook.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+
+        }
+        .whatsapp{
+          width: 50%;
+          background-image: url(whatsapp.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+
+        }
+        .instagram{
+          width: 50%;
+          background-image: url(instagram.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+
+        }
+
+
+
+
+
+
+
+
+      /*ANUNCIOS(ADVOCACIA)*/
+
+
+      body{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+
+      }
+      p{
+        font-size: 13px;
+      }
+      h3{
+        font-size: 15px;
+      }
+.contatotext p{
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+  .cover{
+    width: 100%;
+    height: 200px;
+
+  }
+
+
+  .cover2{
+  width: 100%;
+  box-shadow: none;
+  bottom:0px;
+  height: 70px;
+  font-size: 8em;
+  margin-bottom:  0px;
+  }
+
+ .head{
+height: 40px;
+width:99%;
+
+}
+
+ .btn-toggle-nav{
+  width:1%;
+  height: 35px;
+  background-image: url(menu.png);
+  background-position: center;
+  background-size: cover;
+  repeat: no-repeat;
+  margin-left: -1.8em;
+  width: 30px;
+
+}
+.btn-toggle-nav:hover{
+  opacity: 0.3;
+
+}
+ .head ul {
+margin: 40px -0.2em -45px -5.25em;
+background: black;
+color: white;
+z-index: 10;
+width: 100%;
+display:flex;
+align-items:center;
+border-radius: 0px 0px 0px 30px;
+visibility: hidden;
+
+
+}
+ .head ul li, .head ul li a{
+  margin: 0em 1em;
+  margin-right: 0.1em;
+  align-items: center;
+
+}
+  .foto1 img, .foto2 img, .foto12 img,.foto22 img, .foto13 img, .foto23 img{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .foto1, .foto2, .foto12,.foto22, .foto13,.foto23{
+
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .foto3, .foto32, .foto33{
+    width:0;
+    height: 0;
+
+  }
+
+.coveranuncio{
+box-shadow: none;
+}
+
+ .anuncio1, .anuncio2, .anuncio3{
+  width: 100%;
+
+margin: 0px 0px;
+}
+
+
+  h3{
+   margin: 10px 5px;
+}
+
+p{
+  margin: 5px 5px;
+}
+
+
+
+.cover2 h1{
+  font-size: 40px;
+}
+
+  }
+  .head img{
+    width:100px;
+    height: 35px;
+  }
+#logo{
+height: 40px;
+}
+
+}
