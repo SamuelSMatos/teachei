@@ -769,6 +769,12 @@ visibility: hidden;
     object-fit: cover;
   }
 
+  .foto1, .foto12, .foto13{
+  border-radius: 0px 20px 0px 0px;
+}
+.foto2, .foto22, .foto23{
+  border-radius: 20px 0px 0px 0px
+}
   .foto3, .foto32, .foto33{
     width:0;
     height: 0;
