@@ -622,7 +622,7 @@ border: none;
 
   }
 .index .head{
-  width: 99%;
+  width: 99.9%;
   background-color: white;
 }
 .cover{
@@ -726,7 +726,7 @@ width:99%;
 }
 
  .btn-toggle-nav{
-  width:1%;
+  width:0.1%;
   height: 35px;
   background-image: url(menu.png);
   background-position: center;
