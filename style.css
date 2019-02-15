@@ -761,11 +761,10 @@ visibility: hidden;
 }
   .foto1 img, .foto2 img, .foto12 img,.foto22 img, .foto13 img, .foto23 img{
     width: 100%;
-    box-shadow: none;
-  }
+}
 
   .foto1, .foto2, .foto12,.foto22, .foto13,.foto23{
-
+    box-shadow:none;
     width: 50%;
     object-fit: cover;
   }
