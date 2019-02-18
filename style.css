@@ -256,11 +256,11 @@ background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(
 }
 #fotografia{
   grid-area: n;
-  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(fotografia.jpeg);
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(fotografia.jpg);
 }
 #hotel{
   grid-area: o ;
-  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(hotel.png);
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(hotel.jpg);
   background-size: cover;
 }
 #lanchonete{
@@ -609,7 +609,7 @@ body.sobre{
 @media  (max-width:750px) {
                   /*INDEX*/
 #academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
-width: 42%;
+width: 50%;
 margin: 0.2em;
 
 height: 100px;
