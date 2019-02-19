@@ -609,7 +609,7 @@ body.sobre{
 @media  (max-width:750px) {
                   /*INDEX*/
 #academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
-width: 47%;
+width: 40%;
 margin: 0.2em;
 
 height: 100px;
@@ -619,7 +619,7 @@ border: none;
    .index{
 
     background:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
-
+    justify-content: center;
   }
 .index .head{
   width: 99.9%;
@@ -645,35 +645,20 @@ border-radius: 25px;
 }
 
         /*CONTATO*/
-        .email{
-          width: 50%;
-          background-image: url(emal.png);
-          background-size:contain;
-          background-repeat: no-repeat;
-
-
-        }
-        .facebook{
-          width: 50%;
-          background-image: url(facebook.png);
+  
+  .paginacontato{
+  justify-content: center;
+  }
+  
+        .instagram, .whatsapp, .email, .facebook{
+          width: 100%;
+          margin: 1em 0.5em  ;
+          max-width: 160px;
           background-size: contain;
           background-repeat: no-repeat;
+          text-align:center;
 
-        }
-        .whatsapp{
-          width: 50%;
-          background-image: url(whatsapp.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-
-        }
-        .instagram{
-          width: 50%;
-          background-image: url(instagram.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-
-        }
+    }
 
 
 
