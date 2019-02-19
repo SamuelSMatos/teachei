@@ -664,7 +664,6 @@ border-radius: 25px;
         .instagram, .whatsapp, .email, .facebook{
           width: 100%;
           margin: 1em 0.5em  ;
-          max-width: 160px;
           background-size: contain;
           background-repeat: no-repeat;
           text-align:center;
