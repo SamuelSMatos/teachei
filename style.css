@@ -619,7 +619,7 @@ border: none;
    .index{
 
     background:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
-    justify-content: center;
+    justify-content:space-around;
   }
 .index .head{
   width: 99.9%;
