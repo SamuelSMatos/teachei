@@ -649,7 +649,18 @@ border-radius: 25px;
   .paginacontato{
   justify-content: center;
   }
-  
+  .email img{
+  width: 50px;
+}
+.whatsapp img{
+  width: 50px;
+}
+.facebook img{
+  width: 50px;
+}
+.instagram img{
+  width: 50px;
+}
         .instagram, .whatsapp, .email, .facebook{
           width: 100%;
           margin: 1em 0.5em  ;
