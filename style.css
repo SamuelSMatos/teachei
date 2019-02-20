@@ -61,17 +61,7 @@ h5{
   background-image:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
   grid-area: 2 / 1 /-1 / -1;
   background-size: cover;
-  /*.bg {
-    /* The image used
 
-     Half height
-    height: 50%;
-
-     Center and scale the image nicely
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }*/
 }
 #logo{
   height: 100px;
@@ -86,22 +76,20 @@ h5{
   border-color: white;
   /*pointer-events:none;*/
 }
-/*
- .textcover {
-  grid-area: z;
-  opacity: 0.9;
-  color:black;
-  text-align: center;
-}
-*/
+
 a{
   text-decoration: none;
   color: inherit;
 }
+
 .head{
   grid-area: x;
   display: flex;
   grid-gap: 0px;
+  background-color: white;
+  height: 35px;
+  position: fixed;
+  width: 100%;
 }
 .head li{
   display: inline;
@@ -324,7 +312,7 @@ background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(
 }
 
 
-#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
+#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte, #animais, #itens, #arte, #roupas, #papelaria, #tecnologia{
   display: flex;
   align-items:flex-end;
   color: white;
@@ -334,12 +322,56 @@ background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(
   border-radius: 7px;
   padding: 0.5em;
   background-size: cover;
-  /*
-  border-style: solid;
-  border-color: black;*/
+
 }
 
 
+
+
+
+
+
+                                          /*CATEGORIAS DE LOJAS*/
+
+.lojastags p{
+  color: white;
+}
+#animais{
+  grid-area: a;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(animal.jpg);
+}
+#arte{
+  grid-area: b;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(arte.jpg);
+}
+#itens{
+  grid-area: c;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(itens.jpg);
+}
+#papelaria{
+  grid-area: d;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(papelaria.jpg);
+}
+#roupas{
+  grid-area: e;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(roupas.jpg);
+}
+#roupas:hover{
+  color: black;
+  display:block;
+}
+#roupas:hover:after{
+  content: attr(data-hover);
+  display: block;
+
+  align-items:flex-end;
+  justify-content:flex-end;
+  color: white;
+}
+#tecnologia{
+  grid-area: f;
+  background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%), url(tecnologia.jpg);
+}
 
 
 
@@ -349,12 +381,12 @@ background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(
 
                                                     /*PÁGINA ANUNCIOS*/
 
-body.anunciosadvocacia{
+body.anuncios{
 
   margin: 0;
   display: grid;
   grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
-  grid-template-rows: 25px 50px repeat(4,100px) repeat(4, minmax(5em, 180px)) auto 35px;
+  grid-template-rows: 25px 50px repeat(4,100px) repeat(6, minmax(5em, 180px)) auto 35px;
   grid-template-areas:
     "x x x x x x x x"
     ". z z z z z z ."
@@ -366,6 +398,8 @@ body.anunciosadvocacia{
     ". g h i j k l ."
     ". m n o p q r ."
     ". s aa ab ac ad ae ."
+    ". . . . . . . ."
+    ". . . . . . . ."
     ". . . fot fot fot . ." ;
   grid-gap: 15px;
 }
@@ -392,12 +426,12 @@ body.anunciosadvocacia{
   font-weight: bold;
 }
 .coveranuncio{
-  grid-area: 6 /2/ 11 / 8;
+  grid-area: 6 /2/ -1 / 8;
   background: white;
   /*background: linear-gradient(hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 0.6));*/
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0px 10px 10px 10px hsla(0, 0%, 10%, 0.8);
-
+  margin:  -20px;
 }
 #mapaanuncio {
 
@@ -414,57 +448,81 @@ height: 20px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
                                 /*ADVOCACIA*/
 
 
+                          /*      body#anuncioadvocacia{
 
+                                  margin: 0;
+                                  display: grid;
+                                  grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
+                                  grid-template-rows: 25px 50px repeat(4,100px) repeat(8, minmax(5em, 180px)) auto 35px;
+                                  grid-template-areas:
+                                    "x x x x x x x x"
+                                    ". z z z z z z ."
+                                    ". z z z z z z ."
+                                    ". z z z z z z ."
+                                    ". z z z z z z ."
+                                    ". z z z z z z ."
+                                    ". a b c d e f ."
+                                    ". g h i j k l ."
+                                    ". m n o p q r ."
+                                    ". s aa ab ac ad ae ."
+                                    ". . . . . . . ."
+                                    ". . . . . . . ."
+                                    ". . . . . . . ."
+                                    ". . . . . . . ."
+                                    ". . . fot fot fot . ." ;
+                                  grid-gap: 15px;
+                                }*/
 
 .anuncio1{
-  grid-area: 7/2/span 1 /span 3;
+  grid-area: 7/2/span 2 /span 2;
   padding-left: 10px;
   border-top: 5px ridge white;
   border-bottom: none;
   margin-left: 10px;
   }
   .foto1{
-    grid-area:7/5/span 1/span 1;
+    grid-area:7/4/span 2/span 2;
     border-radius: 0px 0px 0px 40px;
     }
   .foto2{
-    grid-area: 7/6/span 1/ span 1;
-  }
-  .foto3{
-    grid-area: 7/7/span 1/ span 1;
-    margin-right: 1em;
-    border-radius: 0px 40px 0px 0px;
-
+    grid-area: 7/6/span 2/ span 2;
   }
 
 
   .anuncio2{
-    grid-area: 8/2/span 1 /span 3;
+    grid-area: 9/2/span 2 /span 2;
     padding-left: 10px;
     border-top: 5px ridge white;
     border-bottom: none;
     margin-left: 10px;
     }
   .foto12{
-    grid-area:8/5/span 1/span 1;
+    grid-area:9/4/span 2/span 2;
     border-radius: 0px 0px 0px 40px;
 
   }
   .foto22{
-    grid-area: 8/6/span 1/ span 1;
+    grid-area: 9/6/span 2/ span 2;
 
   }
-  .foto32{
-    grid-area: 8/7/span 1/ span 1;
-    margin-right: 10px;
-    border-radius: 0px 40px 0px 0px;
 
-  }
   .anuncio3{
-    grid-area: 9/2/span 1 /span 3;
+    grid-area: 11/2/span 2 /span 2;
     padding-left: 10px;
     border-top: 5px ridge white;
     border-bottom: none;
@@ -473,25 +531,18 @@ height: 20px;
 
     }
   .foto13{
-    grid-area:9/5/span 1/span 1;
+    grid-area:11/4/span 2/span 2;
     border-radius: 0px 0px 0px 40px;
 
   }
   .foto23{
-    grid-area: 9/6/span 1/ span 1;
-
-  }
-  .foto33{
-    grid-area: 9/7/span 1/ span 1;
-    margin-right: 10px;
-    border-radius: 0px 40px 0px 0px;
+    grid-area: 11/6/span 2/ span 2;
 
   }
 
-  .foto1, .foto2, .foto3, .foto12,.foto22, .foto32, .foto13, .foto23, .foto33{
-
-
-    height: 160px;
+  .foto1, .foto2, .foto3, .foto12,.foto22, .foto32, .foto13, .foto23{
+    display: padding;
+    height: 320px;
     box-shadow: 10px 10px 50px gray;
     width:100%;
     background-size: cover;
@@ -500,6 +551,7 @@ height: 20px;
 
 
 
+                    /*PÁGINA BAR*/
 
 
 
@@ -566,7 +618,6 @@ body.sobre{
   background-size:contain;
   background-repeat: no-repeat;
 
-
 }
 .facebook{
   grid-area: e;
@@ -608,7 +659,7 @@ body.sobre{
 
 @media  (max-width:750px) {
                   /*INDEX*/
-#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte{
+#academia,#açougue,#advocacia,#alfaiate,#aluguel, #bar, #beleza,#cerimonial,#civil,#contabilidade,#doces,#educação,#farmácia,#fotografia, #hotel,#lanchonete,#lavajato,#lojas,#musica,#oficina,#saude,#supermacado,#transporte, #animais, #arte, #roupas, #tecnologia, #papelaria, #itens{
 width: 40%;
 margin: 0.2em;
 
@@ -616,18 +667,36 @@ height: 100px;
 border: none;
 
 }
+
    .index{
 
     background:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
     justify-content:space-around;
+    margin: 0;
   }
 .index .head{
-  width: 99.9%;
+  width: 99.99%;
   background-color: white;
+}
+.index h2{
+  font-size: 14px;
 }
 .cover{
   margin: 0.2em;
 border-radius: 25px;
+}
+#credits{
+  width: 100%;
+  width:200px;
+}
+        /*CATEGORIAS de LOJAS*/
+.lojastags{
+  background:  url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
+justify-content:space-around;
+}
+.lojastags .head{
+  ;
+  background-color: white;
 }
 
 
@@ -639,17 +708,20 @@ border-radius: 25px;
       flex-flow: row wrap;
 
       }
-.sobre h5{
+ h5{
   font-size: 8px;
 
 }
+#credits{
+  width: 100%;
 
+}
         /*CONTATO*/
-  
-  .paginacontato{
-  justify-content: center;
-  }
-  .email img{
+
+.paginacontato{
+justify-content: center;
+}
+.email img{
   width: 50px;
 }
 .whatsapp img{
@@ -679,7 +751,13 @@ border-radius: 25px;
 
       /*ANUNCIOS(ADVOCACIA)*/
 
+      body.anuncios{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
 
+      }
       body{
       display: -webkit-flex;
       display: flex;
@@ -716,12 +794,12 @@ border-radius: 25px;
 
  .head{
 height: 40px;
-width:99%;
-
+width:99.9%;
+position: relative;
 }
 
- .btn-toggle-nav{
-  width:0.1%;
+  .btn-toggle-nav{
+  width:0.11%;
   height: 35px;
   background-image: url(menu.png);
   background-position: center;
@@ -729,8 +807,10 @@ width:99%;
   repeat: no-repeat;
   margin-left: -1.8em;
   width: 25px;
+z-index: 1;
 
-}
+  }
+
 .btn-toggle-nav:hover{
   opacity: 0.3;
 
@@ -746,7 +826,6 @@ align-items:center;
 border-radius: 0px 0px 0px 30px;
 visibility: hidden;
 
-
 }
  .head ul li, .head ul li a{
   margin: 0em 1em;
@@ -756,20 +835,22 @@ visibility: hidden;
 }
   .foto1 img, .foto2 img, .foto12 img,.foto22 img, .foto13 img, .foto23 img{
     width: 100%;
-}
 
-  .foto1, .foto2, .foto12,.foto22, .foto13,.foto23{
-    box-shadow:none;
-    width: 50%;
-    object-fit: cover;
   }
-
-  .foto1, .foto12, .foto13{
+.foto1, .foto12, .foto13{
   border-radius: 0px 20px 0px 0px;
 }
 .foto2, .foto22, .foto23{
   border-radius: 20px 0px 0px 0px
 }
+  .foto1, .foto2, .foto12,.foto22, .foto13,.foto23{
+    max-height: 150px;
+    width: 50%;
+    object-fit: cover;
+    box-shadow: none;
+
+  }
+
   .foto3, .foto32, .foto33{
     width:0;
     height: 0;
@@ -794,8 +875,6 @@ margin: 0px 0px;
 p{
   margin: 5px 5px;
 }
-
-
 
 .cover2 h1{
   font-size: 40px;
