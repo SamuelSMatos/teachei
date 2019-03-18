@@ -7,7 +7,7 @@ body{
   margin: 0;
   display: grid;
   grid-template-columns: minmax(1px, 200px) repeat(6, minmax(5em, 200px)) minmax(1px, 200px);
-  grid-template-rows: 25px 50px repeat(4,100px) repeat(4, minmax(5em, 160px)) auto 35px;
+  grid-template-rows: 25px 50px repeat(4,100px) 60px repeat(4, minmax(5em, 160px)) auto 35px;
   grid-template-areas:
     "x x x x x x x x"
     ". z z z z z z ."
@@ -15,12 +15,60 @@ body{
     ". z z z z z z ."
     ". z z z z z z ."
     ". z z z z z z ."
+    ". . . . . . . ."
     ". a b c d e f ."
     ". g h i j k l ."
     ". m n o p q r ."
     ". s aa ab ac ad ae ."
     ". . . fot fot fot . ." ;
   grid-gap: 15px;
+}
+.search-bar{
+  grid-area: 7/2/span 1/8;
+  display: flex;
+  background-color: #2f3640;
+  border-radius: 15px;
+  grid-gap: 0px;
+  box-shadow: 5px 5px 5px black;
+}
+#pesquisa{
+  box-shadow: 1px 1px 1px black;
+  margin-left: 15px;
+  height: 70%;
+  width:95%;
+  background-color: gray;
+  align-self: center;
+  border-radius: 15px;
+  border: hidden;
+  padding-left: 20px;
+
+}
+::-webkit-input-placeholder{
+  color:black;
+}
+:-ms-input-placeholder{
+  color:black;
+}
+::-moz-input-placeholder{
+  color:black;
+}
+:-moz-input-placeholder{
+  color:black;
+}
+#btn{
+  box-shadow: 1px 1px 1px black;
+  height: 75%;
+  width:5%;
+  align-self:center;
+  border-radius: 20%;
+  border: hidden;
+  background-color: gray;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#searching{
+  height: 100%;
+  width: auto;
 }
 footer{
 
@@ -681,6 +729,20 @@ border: none;
 .index h2{
   font-size: 14px;
 }
+.search-bar{
+  width: 95%;
+  height: 50px;
+}
+#pesquisa{
+  margin-left: 5px;
+  width: 85%;
+}
+#btn{
+  padding-left:  0px;
+  margin-right: 5px;
+  width:10%;
+  min-width: 35px;
+}
 .cover{
   margin: 0.2em;
 border-radius: 25px;
@@ -825,7 +887,7 @@ display:flex;
 align-items:center;
 border-radius: 0px 0px 0px 30px;
 visibility: hidden;
-
+opacity: 0.8;
 }
  .head ul li, .head ul li a{
   margin: 0em 1em;
