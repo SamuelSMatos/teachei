@@ -1,0 +1,34 @@
+[
+  {
+    "academia": "academia.html", "academias": "academia.html",
+    "açougue" : "acougue.html", "açougues" : "acougue.html",
+    "advogado" : "advocacia.html", "advogados" : "advocacia.html", "advocacia" : "advocacia.html",
+    "alfaiate" : "alfaiate.html", "alfaiates" : "alfaiate.html", "costureira" : "alfaiate.html", "costureiras" : "alfaiate.html",
+    "aluguel" : "aluguel.html", "aluguel de casa" : "aluguel.html", "alugueis" : "aluguel.html", "alugueis de casas" : "aluguel.html","imobiliária" : "aluguel.html",
+    "animais" : "animais.html", "canil" : "animais.html", "animal" : "animais.html",
+    "arte" : "arte.html", "desenho" : "arte.html","desenhos" : "arte.html",
+    "bar" : "bar.html", "bares" : "bar.html",
+    "salão" : "beleza.html", "barbearia" : "beleza.html","salão de beleza" : "beleza.html", "manicure" : "beleza.html","salao" : "beleza.html", "pedicure" : "beleza.html", "escova" : "beleza.html",
+    "cerimonial" : "cerimonial.html", "casamento" : "cerimonial.html","cerimoniais" : "cerimonial.html", "festa" : "cerimonial.html", "aluguel" : "cerimonial.html", "festas" : "cerimonial.html",
+    "pedreiro" : "civil.html", "pintor" : "civil.html","eletricista" : "civil.html", "construção" : "civil.html", "serralheiro" : "civil.html",
+    "contabilidade" : "contabilidade.html", "finança" : "contabilidade.html","finanças" : "contabilidade.html",
+    "contato" : "contato.html", "contatos" : "contato.html",
+    "doce" : "doces.html", "doces" : "doces.html","salgados" : "doces.html", "salgadeira" : "doces.html","salgado" : "doces.html",
+    "educação" : "educação.html", "inglês" : "educação.html", "professor de inglês" : "educação.html", "professor particular" : "educação.html", "professores particulares" : "educação.html", "professor" : "educação.html", "monitoria" : "educação.html",
+    "farmacia" : "farmacia.html", "farmácia" : "farmacia.html", "remédio" : "farmacia.html", "remédios" : "farmacia.html",
+    "fotógrafo" : "fotografia.html", "fotografo" : "fotografia.html", "fotografia" : "fotografia.html", "fotógrafos" : "fotografia.html",
+    "hotel" : "hotel.html", "hoteis" : "hotel.html", "hotéis" : "hotel.html", "motel" : "hotel.html","motéis" : "hotel.html", "estadia" : "hotel.html",
+    "lanchonete" : "lanchonete.html", "lanchonetes" : "lanchonete.html", "padaria" : "lanchonete.html",
+    "lavajato" : "lavajato.html", "lavajatos" : "lavajato.html","lava jato" : "lavajato.html", "lava a jato" : "lavajato.html",
+    "loja" : "loja.html", "lojas" : "loja.html",
+    "música" : "musica.html", "musica" : "musica.html", "professor de música" : "musica.html", "escola de música" : "musica.html", "escola de musica" : "musica.html", "escolas de música" : "musica.html",
+    "oficina" : "oficina.html", "oficinas" : "oficina.html",
+    "papelaria" : "papelaria.html", "papelarias" : "papelaria.html",
+    "roupa" : "lojas.html", "roupas" : "lojas.html",
+    "saúde" : "saude.html", "médico" : "saude.html","medico" : "saude.html", "dentista" : "saude.html","dermatologista" : "saude.html", "oftalmologista" : "saude.html",
+    "supermercado" : "supermercado.html", "supermercados" : "supermercado.html",
+    "tecnologia" : "tecnologia.html", "tecnologias" : "tecnologia.html", "informática" : "tecnologia.html", "informatica" : "tecnologia.html",
+    "transporte" : "transporte.html", "uber" : "transporte.html","motorista" : "transporte.html", "moto taxi" : "transporte.html","mototáxi" : "transporte.html", "moto-taxi" : "transporte.html","moto-táxi" : "transporte.html", "taxi" : "transporte.html"
+
+  }
+]
